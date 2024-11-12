@@ -3,7 +3,7 @@ module.exports = {
   title: 'Devops4Solutions Documentation',
   tagline: 'Documentation provided by Devops4solutions',
   url: 'https://devops4solutions.github.io',
-  baseUrl: '/website1/',
+  baseUrl: '/documents/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
