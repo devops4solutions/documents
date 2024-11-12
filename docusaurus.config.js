@@ -9,15 +9,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'devops4solutions',
   projectName: 'documents', // Usually your repo name.
-  plugins: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        indexPages: true,
-      },
-    ],
-  ],
   themeConfig: {
     navbar: {
       title: 'DevOps Documentation',
