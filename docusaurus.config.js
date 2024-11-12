@@ -8,7 +8,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'devops4solutions',
-  projectName: 'website1', // Usually your repo name.
+  projectName: 'documents', // Usually your repo name.
   plugins: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
