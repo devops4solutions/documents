@@ -1,5 +1,5 @@
 ---
-title: "Introduction of Kubernetes and its Components"
+title: "Kubernetes"
 date: "2018-08-21"
 categories: 
   - "kubernetes"
