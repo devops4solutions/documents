@@ -20,9 +20,6 @@ Kubernetes provides to associate **environment-specific data** with our applicat
 - provides a way to inject customized data into running services from the same container image.
 - used for non-sensitive configuration
 
-kubectl create configmap --help
-
-![](https://cdn-images-1.medium.com/max/1600/1*grfB7CvKxVv7yhoJ4BGxSQ.png)
 
 Command to create configmap
 
