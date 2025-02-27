@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Devops4Solutions Documentation',
   tagline: 'Documentation provided by Devops4solutions',
-  url: 'https://devops4solutions.com',
+  url: 'https://devops4solutions.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,13 +26,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://devops4solutions.com/docs/edit/main/',
+            'https://devops4solutions.github.io/docs/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://devops4solutions.com/docs/edit/main/blog/',
+            'https://devops4solutions.github.io/docs/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
