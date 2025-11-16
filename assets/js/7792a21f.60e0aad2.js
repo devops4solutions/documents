@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdevops4solution=globalThis.webpackChunkdevops4solution||[]).push([[220],{6905:(e,l,o)=>{o.r(l),o.d(l,{default:()=>n});var t=o(6540);function n(){return t.createElement("div",null,t.createElement("h1",null,"About Us"),t.createElement("p",null,"Welcome to DevOps4Solutions, your partner for DevOps solutions!"))}}}]);

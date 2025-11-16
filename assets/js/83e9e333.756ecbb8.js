@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdevops4solution=globalThis.webpackChunkdevops4solution||[]).push([[620],{3616:(e,l,t)=>{t.r(l),t.d(l,{default:()=>o});var n=t(6540);function o(){return n.createElement("div",null,n.createElement("h1",null,"Contact Us"),n.createElement("p",null,"Email: contact@devops4solutions.com"))}}}]);
