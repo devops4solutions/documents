@@ -1,38 +1,76 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Devops4Solutions Documentation',
-  tagline: 'Documentation provided by Devops4solutions',
+  title: 'Devops4Solutions',
+  tagline: 'Solutions and Insights for DevOps Professionals',
   url: 'https://devops4solutions.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'devops4solutions',
-  projectName: 'documents', // Usually your repo name.
+  organizationName: 'devops4solutions', 
+  projectName: 'documents', 
+
   themeConfig: {
     navbar: {
-      title: 'DevOps Documentation',
-
+      title: 'Devops4Solutions',
+      logo: {
+        alt: 'Devops4Solutions Logo',
+        src: 'img/logo.png', // Add your logo in /static/img/
+      },
+      items: [
+        { to: '/', label: 'Home', position: 'left' },
+        { to: '/about', label: 'About Us', position: 'left' },
+        { to: '/docs/intro', label: 'Case Studies', position: 'left' }, // you can put your case studies in docs
+        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/contact', label: 'Contact Us', position: 'left' },
+        {
+          href: 'https://github.com/devops4solutions/documents',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
     },
-   
-   
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Company',
+          items: [
+            { label: 'About Us', to: '/about' },
+            { label: 'Contact', to: '/contact' },
+            { label: 'Case Studies', to: '/docs/intro' },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            { label: 'GitHub', href: 'https://github.com/devops4solutions/documents' },
+            { label: 'LinkedIn', href: 'https://linkedin.com/company/devops4solutions' },
+          ],
+        },
+      ],
+      copyright: `© ${new Date().getFullYear()} Devops4Solutions`,
+    },
   },
+
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
-          remarkPlugins: [require('mdx-mermaid')],
+          path: 'docs', // folder where your docs/case studies live
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+          remarkPlugins: [require('mdx-mermaid')],
           editUrl:
-            'https://devops4solutions.github.io/docs/edit/main/',
+            'https://github.com/devops4solutions/documents/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
+          blogTitle: 'Devops4Solutions Blog',
+          blogDescription: 'Tips, insights, and case studies in DevOps',
           editUrl:
-            'https://devops4solutions.github.io/docs/edit/main/blog/',
+            'https://github.com/devops4solutions/documents/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -40,5 +78,15 @@ module.exports = {
       },
     ],
   ],
-};
 
+  // Custom pages for homepage, about, contact
+  plugins: [
+    [
+      '@docusaurus/plugin-content-pages',
+      {
+        path: 'src/pages',
+        routeBasePath: '/',
+      },
+    ],
+  ],
+};
