@@ -1,30 +1,30 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Devops4Solutions',
-  tagline: 'Solutions and Insights for DevOps Professionals',
+  title: 'DevOps4Solutions',
+  tagline: 'Your trusted DevOps and Cloud solutions partner',
   url: 'https://devops4solutions.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'devops4solutions', 
-  projectName: 'documents', 
+  organizationName: 'devops4solutions', // GitHub org/user
+  projectName: 'website', // repo name
 
   themeConfig: {
     navbar: {
-      title: 'Devops4Solutions',
+      title: 'DevOps4Solutions',
       logo: {
-        alt: 'Devops4Solutions Logo',
-        src: 'img/logo.png', // Add your logo in /static/img/
+        alt: 'DevOps4Solutions Logo',
+        src: 'img/logo.svg', // Add your logo
       },
       items: [
         { to: '/', label: 'Home', position: 'left' },
         { to: '/about', label: 'About Us', position: 'left' },
-        { to: '/docs/intro', label: 'Case Studies', position: 'left' }, // you can put your case studies in docs
+        { to: '/case-studies', label: 'Case Studies', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/contact', label: 'Contact Us', position: 'left' },
         {
-          href: 'https://github.com/devops4solutions/documents',
+          href: 'https://github.com/devops4solutions',
           label: 'GitHub',
           position: 'right',
         },
@@ -37,19 +37,23 @@ module.exports = {
           title: 'Company',
           items: [
             { label: 'About Us', to: '/about' },
+            { label: 'Case Studies', to: '/case-studies' },
             { label: 'Contact', to: '/contact' },
-            { label: 'Case Studies', to: '/docs/intro' },
           ],
         },
         {
-          title: 'Community',
+          title: 'Resources',
           items: [
-            { label: 'GitHub', href: 'https://github.com/devops4solutions/documents' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/company/devops4solutions' },
+            { label: 'Blog', to: '/blog' },
+            { label: 'GitHub', href: 'https://github.com/devops4solutions' },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Devops4Solutions`,
+      copyright: `© ${new Date().getFullYear()} DevOps4Solutions`,
+    },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
     },
   },
 
@@ -58,19 +62,15 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'docs', // folder where your docs/case studies live
-          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [require('mdx-mermaid')],
           editUrl:
-            'https://github.com/devops4solutions/documents/edit/main/',
+            'https://github.com/devops4solutions/website/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          blogTitle: 'Devops4Solutions Blog',
-          blogDescription: 'Tips, insights, and case studies in DevOps',
           editUrl:
-            'https://github.com/devops4solutions/documents/edit/main/blog/',
+            'https://github.com/devops4solutions/website/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -79,14 +79,8 @@ module.exports = {
     ],
   ],
 
-  // Custom pages for homepage, about, contact
+  // Optional plugins (avoid conflicts with default content pages)
   plugins: [
-    [
-      '@docusaurus/plugin-content-pages',
-      {
-        path: 'src/pages',
-        routeBasePath: '/',
-      },
-    ],
+    // You can add analytics, sitemap, or custom plugins here
   ],
 };
