@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Devops4Solutions Documentation',
-  tagline: 'Documentation provided by Devops4solutions',
+  tagline: 'Documentation provided by Devops4solutions ',
   url: 'https://devops4solutions.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
